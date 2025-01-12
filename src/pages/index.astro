@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Layout.astro";
+import {
+  SUB_TITLE,
+  BIO_TEXT,
+  BIO_ITEMS,
+  NEWS,
+  PUBLICATIONS,
+  NAME,
+} from "../lib/consts";
+import { Content as Biography } from "../components/biography.md";
+import HighlightAuthor from "../components/HighlightAuthor.astro";
+import { Image } from "astro:assets";
+import Portfolio from "../assets/portfolio.jpeg";
+---
+
+<Layout>
+  <div class="flex items-center">
+    <div>
+      <h2 class="mt-0">{SUB_TITLE}</h2>
+      <p>{BIO_TEXT}</p>
+      <p class="leading-5">
+        {
+          BIO_ITEMS.flatMap(Object.entries).map(([key, value]) => (
+            <>
+              <span class="font-bold">{key}:</span>
+              {value}
+              <br />
+            </>
+          ))
+        }
+      </p>
+    </div>
+    <div class="grow"></div>
+    <div class="sm:mr-10">
+      <Image
+        src={Portfolio}
+        alt="Portfolio"
+        class="mb-0 mt-3 aspect-square max-h-40 max-w-40 rounded-full object-cover"
+      />
+    </div>
+  </div>
+  <Biography />
+  <h2>News</h2>
+  <div class="flex flex-col gap-3">
+    {
+      NEWS.map((item) => (
+        <span class="leading-6">
+          <span class="rounded-lg bg-zinc-100 p-1 font-mono">{item.date}</span>{" "}
+          {item.content}
+        </span>
+      ))
+    }
+  </div>
+  <h2>Publications</h2>
+  <div class="flex flex-col gap-2">
+    {
+      PUBLICATIONS.map((item) => (
+        <div class="flex flex-row rounded-xl bg-zinc-50 px-3">
+          <div>
+            <a class="no-underline" href={item.url}>
+              <h3 class={item.url ? "mt-4" : "mt-4 hover:no-underline"}>
+                <span class="rounded-lg bg-zinc-200 p-1 font-mono">{`${item.journal} ${item.year}`}</span>{" "}
+                {item.title}
+              </h3>
+            </a>
+            <HighlightAuthor name={NAME} authors={item.authors} />
+          </div>
+          {/*
+      TODO: image(s) here
+      */}
+        </div>
+      ))
+    }
+  </div>
+</Layout>

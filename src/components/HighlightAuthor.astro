@@ -1,0 +1,20 @@
+---
+interface Props {
+  name: string;
+  authors: string;
+}
+
+const { name, authors } = Astro.props;
+const splitedAuthors = authors.split(", ");
+---
+
+<p class="leading-5">
+  {
+    splitedAuthors.map((item, index) => (
+      <>
+        {index > 0 && ", "}
+        {item === name ? <strong>{item}</strong> : item}
+      </>
+    ))
+  }
+</p>

@@ -1,0 +1,49 @@
+{
+  "name": "Your Name",
+  "sub_title": "Ph.D. Student",
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://www.github.com"
+    },
+    {
+      "label": "Papers",
+      "url": "#papers"
+    },
+    {
+      "label": "Blog",
+      "url": "#blog"
+    }
+  ],
+  "bio_text": "Put bio text here",
+  "bio_items": [
+    {
+      "Email": "abc@example.com"
+    },
+    {
+      "Research Interest": "Your research interest here"
+    },
+    {
+      "And": "What ever you want to put here"
+    }
+  ],
+  "news": [
+    {
+      "date": "2024-12",
+      "content": "Your paper was accepted!"
+    },
+    {
+      "date": "2024-11",
+      "content": "A presentation was given"
+    }
+  ],
+  "publications": [
+    {
+      "year": 2025,
+      "journal": "XXX",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "authors": "Adone Tswb, Ksenija Désirée, Wangari Jasmin, Theudofrid Waman",
+      "url": "https://www.baidu.com"
+    }
+  ]
+}

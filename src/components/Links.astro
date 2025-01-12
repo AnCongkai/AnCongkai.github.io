@@ -1,0 +1,7 @@
+---
+import { LINKS } from "../lib/consts";
+---
+
+<div class="flex gap-3">
+  {LINKS.map((item) => <a href={item.url}>{item.label}</a>)}
+</div>

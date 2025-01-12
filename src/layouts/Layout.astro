@@ -1,0 +1,29 @@
+---
+import Topbar from "../components/Topbar.astro";
+import Footer from "../components/Footer.astro";
+import "../global.css";
+import { NAME } from "../lib/consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.css"
+      rel="stylesheet"
+    />
+    <title>{NAME}</title>
+  </head>
+  <body>
+    <Topbar />
+    <div
+      class="prose prose-blue mx-auto mt-5 max-w-5xl px-5 leading-4 prose-code:rounded-lg prose-code:bg-zinc-100 prose-code:p-1 prose-img:mx-auto prose-img:max-h-96 prose-img:w-auto"
+    >
+      <slot />
+    </div>
+    <Footer />
+  </body>
+</html>
