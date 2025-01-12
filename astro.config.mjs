@@ -7,6 +7,8 @@ import rehypeKatex from "rehype-katex";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://ancongkai.github.io",
+  base: "ACK_Bio",
   integrations: [tailwind()],
   markdown: {
     remarkPlugins: [remarkMath],
