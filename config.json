@@ -1,48 +1,99 @@
 {
   "name": "Congkai An",
-  "sub_title": "Ph.D.",
+  "sub_title": "Ph.D. Student",
   "links": [
-    {
-      "label": "GitHub",
-      "url": "https://www.github.com"
-    },
     {
       "label": "Papers",
       "url": "https://scholar.google.com.hk/citations?hl=zh-CN&user=1G13M9UAAAAJ"
     },
-    {
-      "label": "Blog",
-      "url": "#blog"
-    }
   ],
-  "bio_text": "Put bio text here",
+  "bio_text": "Currently, I am a Ph.D. student at Beijing University of Posts and Telecommunications, majoring in computer science and technology.",
   "bio_items": [
     {
       "Email": "ack@bupt.edu.cn"
     },
     {
-      "Research Interest": "Your research interest here"
-    },
-    {
-      "And": "What ever you want to put here"
+      "Research Interest": "Mobile video transmission, Network congestion control"
     }
   ],
   "news": [
     {
       "date": "2024-12",
-      "content": "Your paper was accepted!"
+      "content": "Our paper "Tooth" was accepted by USENIX NSDI 2025!"
     },
     {
       "date": "2024-11",
-      "content": "A presentation was given"
+      "content": "Our paper "SuperABR" was accepted by IEEE TCSVT 2024!"
+    },
+    {
+      "date": "2024-03",
+      "content": "Our paper "Spider" was accepted by IEEE/ACM ToN 2024!"
+    },
+    {
+      "date": "2024-02",
+      "content": "Our paper "Venus" was accepted by ACM MobiCom 2024!"
+    },
+    {
+      "date": "2022-11",
+      "content": "Our paper "Octopus" was accepted by IEEE/ACM ToN 2022!"
+    },
+    {
+      "date": "2022-03",
+      "content": "Our paper "PAR" was accepted by IEEE ICME 2022!"
+    },
+    {
+      "date": "2020-05",
+      "content": "Our paper "Understanding operational 5G" was accepted by ACM SIGCOMM 2020!"
     }
   ],
   "publications": [
     {
       "year": 2025,
-      "journal": "XXX",
-      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "authors": "Adone Tswb, Ksenija Désirée, Wangari Jasmin, Theudofrid Waman",
+      "journal": "NSDI",
+      "title": "Tooth: Toward Optimal Balance of Video QoE and Redundancy Cost by Fine-Grained FEC in Cloud Gaming Streaming",
+      "authors": "Congkai An, Huanhuan Zhang, Shibo Wang, Jingyang Kang, Anfu Zhou, Liang Liu, Huadong Ma, Zili Meng, Delei Ma, Yusheng Dong, Xiaogang Lei",
+      "url": "https://www.baidu.com"
+    },
+    {
+      "year": 2024,
+      "journal": "TCSVT",
+      "title": "Enhancing QoE of Adaptive Video Streaming by Generating Fine-grained Throughput",
+      "authors": "Congakai An, Huanhuan Zhang, Jingyang Kang, Zhuo Liu, Anfu Zhou, Liang Liu, Huadong Ma",
+      "url": "https://www.baidu.com"
+    },
+    {
+      "year": 2024,
+      "journal": "ToN",
+      "title": "Reviving Peer-to-Peer Networking for Scalable Crowdsourced Live Video Streaming",
+      "authors": "Huanhuan Zhang, Congkai An, Anfu Zhou, Chaoyue Li, Xi Liu, Jialiang Pei, Yifan Zhu, Liang Liu, Huadong Ma",
+      "url": "https://www.baidu.com"
+    },
+    {
+      "year": 2024,
+      "journal": "MobiCom",
+      "title": "Venus: Enhancing QoE of Crowdsourced Live Video Streaming by Exploiting Multiflow Viewer Assistance",
+      "authors": "Huanhuan Zhang, Congkai An, Anfu Zhou, Yifan Zhu, Weilin Sun, Yixuan Lu, Jiahao Chen, Liang Liu, Huadong Ma, Aiguo Fei",
+      "url": "https://www.baidu.com"
+    },
+    {
+      "year": 2022,
+      "journal": "ToN",
+      "title": "Octopus: Exploiting the edge intelligence for accessible 5g mobile performance enhancement",
+      "authors": "Congkai An, Anfu Zhou, Jialiang Pei, Xi Liu, Dongzhu Xu, Liang Liu, Huadong Ma",
+      "url": "https://www.baidu.com"
+    },
+    {
+      "year": 2022,
+      "journal": "ICME",
+      "title": "PAR: Improving video bitrate adaptation via payload-aware throughput prediction",
+      "authors": "Jialiang Pei, Congkai An, Anfu Zhou, Liang Liu, Huadong Ma",
+      "url": "https://www.baidu.com"
+    },
+    {
+      "year": 2020,
+      "journal": "SIGCOMM",
+      "title": "Understanding operational 5G: A first measurement study on its coverage, performance and energy consumption",
+      "authors": "Dongzhu Xu, Anfu Zhou, Xinyu Zhang, Guixian Wang, Xi Liu, Congkai An, Yiming Shi, Liang Liu, Huadong Ma",
       "url": "https://www.baidu.com"
     }
   ]
