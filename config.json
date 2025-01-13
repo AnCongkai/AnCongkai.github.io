@@ -1,6 +1,6 @@
 {
-  "name": "Your Name",
-  "sub_title": "Ph.D. Student",
+  "name": "Congkai An",
+  "sub_title": "Ph.D.",
   "links": [
     {
       "label": "GitHub",
@@ -8,7 +8,7 @@
     },
     {
       "label": "Papers",
-      "url": "#papers"
+      "url": "https://scholar.google.com.hk/citations?hl=zh-CN&user=1G13M9UAAAAJ"
     },
     {
       "label": "Blog",
@@ -18,7 +18,7 @@
   "bio_text": "Put bio text here",
   "bio_items": [
     {
-      "Email": "abc@example.com"
+      "Email": "ack@bupt.edu.cn"
     },
     {
       "Research Interest": "Your research interest here"
