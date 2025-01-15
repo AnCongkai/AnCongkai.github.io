@@ -19,16 +19,15 @@ import Portfolio from "../assets/ack.png";
   <div class="flex items-center">
     <div>
       <h2 class="mt-0">{SUB_TITLE}</h2>
-      <p>{BIO_TEXT1}</p>
-      <p>{BIO_TEXT2}</p>
+      <p>{BIO_TEXT1}<br /><br />{BIO_TEXT2}</p>
       <p class="leading-5">
         {
           BIO_ITEMS.flatMap(Object.entries).map(([key, value]) => (
-            <>
+            <div style="margin-bottom: 12px;">
               <span class="font-bold">{key}:</span>
               {value}
               <br />
-            </>
+            </div>
           ))
         }
       </p>
