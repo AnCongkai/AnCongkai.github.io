@@ -1,13 +1,14 @@
 {
   "name": "Congkai An | 安聪凯",
   "sub_title": "Ph.D. Student",
+  "bio_text1": "School of Computer Science, Beijing University of Posts and Telecommunications ",
+  "bio_text2": "北京邮电大学 计算机学院(国家示范性软件学院)，博士生",
   "links": [
     {
-      "label": "Papers",
+      "label": "Google Scholar",
       "url": "https://scholar.google.com.hk/citations?hl=zh-CN&user=1G13M9UAAAAJ"
     }
   ],
-  "bio_text": "",
   "bio_items": [
     {
       "Email": "ack@bupt.edu.cn"
