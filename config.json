@@ -5,7 +5,7 @@
     {
       "label": "Papers",
       "url": "https://scholar.google.com.hk/citations?hl=zh-CN&user=1G13M9UAAAAJ"
-    },
+    }
   ],
   "bio_text": "Currently, I am a Ph.D. student at Beijing University of Posts and Telecommunications, majoring in computer science and technology.",
   "bio_items": [
@@ -19,31 +19,31 @@
   "news": [
     {
       "date": "2024-12",
-      "content": "Our paper "Tooth" was accepted by USENIX NSDI 2025!"
+      "content": "Our paper \"Tooth\" was accepted by USENIX NSDI 2025!"
     },
     {
       "date": "2024-11",
-      "content": "Our paper "SuperABR" was accepted by IEEE TCSVT 2024!"
+      "content": "Our paper \"SuperABR\" was accepted by IEEE TCSVT 2024!"
     },
     {
       "date": "2024-03",
-      "content": "Our paper "Spider" was accepted by IEEE/ACM ToN 2024!"
+      "content": "Our paper \"Spider\" was accepted by IEEE/ACM ToN 2024!"
     },
     {
       "date": "2024-02",
-      "content": "Our paper "Venus" was accepted by ACM MobiCom 2024!"
+      "content": "Our paper \"Venus\" was accepted by ACM MobiCom 2024!"
     },
     {
       "date": "2022-11",
-      "content": "Our paper "Octopus" was accepted by IEEE/ACM ToN 2022!"
+      "content": "Our paper \"Octopus\" was accepted by IEEE/ACM ToN 2022!"
     },
     {
       "date": "2022-03",
-      "content": "Our paper "PAR" was accepted by IEEE ICME 2022!"
+      "content": "Our paper \"PAR\" was accepted by IEEE ICME 2022!"
     },
     {
       "date": "2020-05",
-      "content": "Our paper "Understanding operational 5G" was accepted by ACM SIGCOMM 2020!"
+      "content": "Our paper \"Understanding operational 5G\" was accepted by ACM SIGCOMM 2020!"
     }
   ],
   "publications": [
