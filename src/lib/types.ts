@@ -18,4 +18,5 @@ export type PublicationsItem = {
   url?: string;
   img?: string;
   thumbnail?: string;
+  width?: string;
 };
