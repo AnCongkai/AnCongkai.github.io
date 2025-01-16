@@ -7,6 +7,9 @@ export default {
         selectionBg: "#4f46e5",
         selectionText: "#fff",
       },
+      spacing: {
+        "2/3": "66.666667%",
+      },
       typography: {
         DEFAULT: {
           css: {

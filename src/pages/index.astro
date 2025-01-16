@@ -2,28 +2,30 @@
 import Layout from "../layouts/Layout.astro";
 import {
   SUB_TITLE,
-  BIO_TEXT1,
-  BIO_TEXT2,
+  BIO_TEXT,
   BIO_ITEMS,
   NEWS,
   PUBLICATIONS,
   NAME,
 } from "../lib/consts";
 import { Content as Biography } from "../components/biography.md";
-import HighlightAuthor from "../components/HighlightAuthor.astro";
 import { Image } from "astro:assets";
 import Portfolio from "../assets/ack.png";
+import PublicationItem from "../components/PublicationItem.astro";
 ---
 
 <Layout>
+  <h1 class="text-3xl font-semibold">
+    {NAME}
+  </h1>
   <div class="flex items-center">
     <div>
       <h2 class="mt-0">{SUB_TITLE}</h2>
-      <p>{BIO_TEXT1}<br /><br />{BIO_TEXT2}</p>
+      {BIO_TEXT.map((item) => <p>{item}</p>)}
       <p class="leading-5">
         {
           BIO_ITEMS.flatMap(Object.entries).map(([key, value]) => (
-            <div style="margin-bottom: 12px;">
+            <div class="my-2">
               <span class="font-bold">{key}:</span>
               {value}
               <br />
@@ -37,7 +39,7 @@ import Portfolio from "../assets/ack.png";
       <Image
         src={Portfolio}
         alt="Portfolio"
-        class="mb-0 mt-3 aspect-square max-h-40 max-w-40 rounded-full object-cover"
+        class="my-0 aspect-square max-h-32 max-w-32 object-cover sm:max-h-40 sm:max-w-40"
       />
     </div>
   </div>
@@ -55,23 +57,6 @@ import Portfolio from "../assets/ack.png";
   </div>
   <h2>Publications</h2>
   <div class="flex flex-col gap-2">
-    {
-      PUBLICATIONS.map((item) => (
-        <div class="flex flex-row rounded-xl bg-zinc-50 px-3">
-          <div>
-            <a class="no-underline" href={item.url}>
-              <h3 class={item.url ? "mt-4" : "mt-4 hover:no-underline"}>
-                <span class="rounded-lg bg-zinc-200 p-1 font-mono">{`${item.journal} ${item.year}`}</span>{" "}
-                {item.title}
-              </h3>
-            </a>
-            <HighlightAuthor name={NAME} authors={item.authors} />
-          </div>
-          {/*
-      TODO: image(s) here
-      */}
-        </div>
-      ))
-    }
+    {PUBLICATIONS.map((item) => <PublicationItem item={item} />)}
   </div>
 </Layout>

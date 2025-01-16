@@ -11,8 +11,7 @@ const configSchema = z.object({
       url: z.string(),
     }),
   ),
-  bio_text1: z.string(),
-  bio_text2: z.string(),
+  bio_text: z.array(z.string()),
   bio_items: z.array(z.record(z.string())),
   news: z.array(
     z.object({
@@ -28,6 +27,7 @@ const configSchema = z.object({
       title: z.string(),
       authors: z.string(),
       url: z.string().url().optional(),
+      thumbnail: z.string().optional(),
     }),
   ),
 });
@@ -37,8 +37,7 @@ const typedSchema = configSchema.parse(config);
 export const NAME = typedSchema.name;
 export const SUB_TITLE = typedSchema.sub_title;
 export const LINKS: LinkItem[] = typedSchema.links;
-export const BIO_TEXT1 = typedSchema.bio_text1;
-export const BIO_TEXT2 = typedSchema.bio_text2;
+export const BIO_TEXT = typedSchema.bio_text;
 export const BIO_ITEMS: BioItem[] = typedSchema.bio_items;
 export const NEWS: NewsItem[] = typedSchema.news;
 export const PUBLICATIONS: PublicationsItem[] = typedSchema.publications;

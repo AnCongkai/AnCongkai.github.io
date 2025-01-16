@@ -1,0 +1,40 @@
+---
+import HighlightAuthor from "../components/HighlightAuthor.astro";
+import { Image } from "astro:assets";
+import { NAME } from "../lib/consts";
+const { item } = Astro.props;
+
+// should be: Record<string, () => Promise<{default: ImageMetadata}>>
+// instead: Record<string, () => Promise<unknown>>
+// @ts-ignore don't know if this is a bug or not
+const images: Record<string, () => Promise<{ default: ImageMetadata }>> =
+  import.meta.glob("/src/assets/*.{jpeg,jpg,png,gif}");
+---
+
+<div class="flex flex-col-reverse sm:flex-row sm:gap-5">
+  <div class="flex w-full items-center">
+    <div class="flex w-full flex-row rounded-xl bg-zinc-50 px-3">
+      <div>
+        <a class="no-underline" href={item.url}>
+          <h3 class={item.url ? "mt-4" : "mt-4 hover:no-underline"}>
+            <span class="rounded-lg bg-zinc-200 p-1 font-mono"
+              >{`${item.journal} ${item.year}`}</span
+            >{" "}
+            {item.title}
+          </h3>
+        </a>
+        <HighlightAuthor name={NAME} authors={item.authors} />
+      </div>
+    </div>
+  </div>
+  {
+    item.thumbnail && (
+      <div>
+        <Image
+          src={images[`/src/assets/${item.thumbnail}`]()}
+          alt="Thumbnail"
+        />
+      </div>
+    )
+  }
+</div>
