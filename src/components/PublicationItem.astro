@@ -30,7 +30,7 @@ const images: Record<string, () => Promise<{ default: ImageMetadata }>> =
   {
     item.thumbnail && (
       <div class="flex items-center">
-        <div style={`width: ${item.width}`}>
+        <div style={`width: ${item.width}`} class="mx-auto">
           <Image
             src={images[`/src/assets/${item.thumbnail}`]()}
             alt="Thumbnail"
