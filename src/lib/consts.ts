@@ -29,6 +29,8 @@ const configSchema = z.object({
       url: z.string().url().optional(),
       thumbnail: z.string().optional(),
       width: z.string().optional(),
+      paper_level: z.string().optional(),
+      paper_intro: z.string().optional(),
     }),
   ),
 });

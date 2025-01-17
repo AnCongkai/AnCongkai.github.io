@@ -10,8 +10,7 @@ const { item } = Astro.props;
 const images: Record<string, () => Promise<{ default: ImageMetadata }>> =
   import.meta.glob("/src/assets/*.{jpeg,jpg,png,gif}");
 ---
-
-<div class="flex flex-col-reverse sm:flex-row sm:gap-5">
+<div class="flex flex-col gap-2 sm:flex-row sm:gap-5"> 
   <div class="flex w-full items-center">
     <div class="flex w-full flex-row rounded-xl bg-zinc-50 px-3">
       <div>
@@ -24,6 +23,16 @@ const images: Record<string, () => Promise<{ default: ImageMetadata }>> =
           </h3>
         </a>
         <HighlightAuthor name={NAME} authors={item.authors} />
+        {item.paper_level && (
+          <span class="inline-block rounded-lg bg-zinc-200 p-1 font-mono mr-2 mb-2">
+            {item.paper_level}
+          </span>
+        )}
+        {item.paper_intro && (
+          <span class="inline-block p-1 font-mono mr-2 mb-2">
+            {item.paper_intro}
+          </span>
+        )}
       </div>
     </div>
   </div>
@@ -34,6 +43,7 @@ const images: Record<string, () => Promise<{ default: ImageMetadata }>> =
           <Image
             src={images[`/src/assets/${item.thumbnail}`]()}
             alt="Thumbnail"
+            class="my-0"
           />
         </div>
       </div>

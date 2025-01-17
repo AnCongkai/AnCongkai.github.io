@@ -56,7 +56,9 @@
       "title": "Tooth: Toward Optimal Balance of Video QoE and Redundancy Cost by Fine-Grained FEC in Cloud Gaming Streaming",
       "authors": "Congkai An, Huanhuan Zhang, Shibo Wang, Jingyang Kang, Anfu Zhou, Liang Liu, Huadong Ma, Zili Meng, Delei Ma, Yusheng Dong, Xiaogang Lei",
       "thumbnail": "Tooth.png",
-      "width": "320px"
+      "width": "320px",
+      "paper_level": "CCF-A",
+      "paper_intro": "此处可以填充其他文字"
     },
     {
       "year": 2024,
@@ -65,7 +67,8 @@
       "authors": "Congkai An, Huanhuan Zhang, Jingyang Kang, Zhuo Liu, Anfu Zhou, Liang Liu, Huadong Ma",
       "url": "https://ieeexplore.ieee.org/abstract/document/10770241",
       "thumbnail": "SuperABR.png",
-      "width": "200px"
+      "width": "200px",
+      "paper_level": "CCF-A"
     },
     {
       "year": 2024,
@@ -74,7 +77,8 @@
       "authors": "Huanhuan Zhang, Congkai An, Anfu Zhou, Chaoyue Li, Xi Liu, Jialiang Pei, Yifan Zhu, Liang Liu, Huadong Ma",
       "url": "https://ieeexplore.ieee.org/document/10480302",
        "thumbnail": "Spider.png",
-      "width": "260px"
+      "width": "260px",
+      "paper_level": "CCF-A"
     },
     {
       "year": 2024,
@@ -83,7 +87,8 @@
       "authors": "Huanhuan Zhang, Congkai An, Anfu Zhou, Yifan Zhu, Weilin Sun, Yixuan Lu, Jiahao Chen, Liang Liu, Huadong Ma, Aiguo Fei",
       "url": "https://dl.acm.org/doi/abs/10.1145/3636534.3649354",
       "thumbnail": "Venus.png",
-      "width": "300px"
+      "width": "300px",
+      "paper_level": "CCF-A"
     },
     {
       "year": 2022,
@@ -92,7 +97,8 @@
       "authors": "Congkai An, Anfu Zhou, Jialiang Pei, Xi Liu, Dongzhu Xu, Liang Liu, Huadong Ma",
       "url": "https://dl.acm.org/doi/abs/10.1109/TNET.2022.3224369",
       "thumbnail": "Octopus.png",
-      "width": "180px"
+      "width": "180px",
+      "paper_level": "CCF-A"
     },
     {
       "year": 2022,
@@ -101,7 +107,8 @@
       "authors": "Jialiang Pei, Congkai An, Anfu Zhou, Liang Liu, Huadong Ma",
       "url": "https://ieeexplore.ieee.org/abstract/document/9860000",
       "thumbnail": "PAR.png",
-      "width": "260px"
+      "width": "260px",
+      "paper_level": "CCF-A"
     },
     {
       "year": 2020,
@@ -110,7 +117,8 @@
       "authors": "Dongzhu Xu, Anfu Zhou, Xinyu Zhang, Guixian Wang, Xi Liu, Congkai An, Yiming Shi, Liang Liu, Huadong Ma",
       "url": "https://dl.acm.org/doi/10.1145/3387514.3405882",
       "thumbnail": "understand 5G.png",
-      "width": "220px"
+      "width": "220px",
+      "paper_level": "CCF-A"
     }
   ]
 }

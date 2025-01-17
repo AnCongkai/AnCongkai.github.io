@@ -15,34 +15,36 @@ import PublicationItem from "../components/PublicationItem.astro";
 ---
 
 <Layout>
-  <h1 class="text-3xl font-semibold">
-    {NAME}
-  </h1>
-  <div class="flex items-center">
-    <div>
-      <h2 class="mt-0">{SUB_TITLE}</h2>
-      {BIO_TEXT.map((item) => <p>{item}</p>)}
-      <p class="leading-5">
-        {
-          BIO_ITEMS.flatMap(Object.entries).map(([key, value]) => (
-            <div class="my-4">
-              <span class="font-bold">{key}:</span>
-              {value}
-              <br />
-            </div>
-          ))
-        }
-      </p>
-    </div>
-    <div class="grow"></div>
-    <div class="sm:mr-10">
-      <Image
-        src={Portfolio}
-        alt="Portfolio"
-        class="my-0 aspect-square max-h-32 max-w-32 object-cover sm:max-h-40 sm:max-w-40"
-      />
+  <div>
+    <div class="flex items-start justify-between">
+      <div>
+        <h1 class="text-3xl font-semibold">
+          {NAME}
+        </h1>
+        <h2 class="mt-0">{SUB_TITLE}</h2>
+        {BIO_TEXT.map((item) => <p>{item}</p>)}
+        <p class="leading-5">
+          {
+            BIO_ITEMS.flatMap(Object.entries).map(([key, value]) => (
+              <div class="my-4">
+                <span class="font-bold">{key}:</span>
+                {value}
+                <br />
+              </div>
+            ))
+          }
+        </p>
+      </div>
+      <div class="sm:mr-10 ml-auto">
+        <Image
+          src={Portfolio}
+          alt="Portfolio"
+          class="my-0 aspect-square max-h-32 max-w-32 object-cover sm:max-h-40 sm:max-w-40"
+        />
+      </div>
     </div>
   </div>
+
   <Biography />
   <h2>News</h2>
   <div class="flex flex-col gap-3">
@@ -56,7 +58,7 @@ import PublicationItem from "../components/PublicationItem.astro";
     }
   </div>
   <h2>Publications</h2>
-  <div class="flex flex-col gap">
+  <div class="flex flex-col gap-6">
     {PUBLICATIONS.map((item) => <PublicationItem item={item} />)}
   </div>
 </Layout>

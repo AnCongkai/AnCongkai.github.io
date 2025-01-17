@@ -19,4 +19,6 @@ export type PublicationsItem = {
   img?: string;
   thumbnail?: string;
   width?: string;
+  paper_level?: string;
+  paper_intro?: string;
 };
