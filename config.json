@@ -59,7 +59,6 @@
       "width": "300px",
       "paper_level": "CCF-A",
       "paper_intro": "USENIX Symposium on Networked Systems Design and Implementation"
-    
     },
     {
       "year": 2024,
@@ -78,7 +77,7 @@
       "title": "Reviving Peer-to-Peer Networking for Scalable Crowdsourced Live Video Streaming",
       "authors": "Huanhuan Zhang, Congkai An, Anfu Zhou, Chaoyue Li, Xi Liu, Jialiang Pei, Yifan Zhu, Liang Liu, Huadong Ma",
       "url": "https://ieeexplore.ieee.org/document/10480302",
-       "thumbnail": "Spider.png",
+      "thumbnail": "Spider.png",
       "width": "260px",
       "paper_level": "CCF-A",
       "paper_intro": "IEEE/ACM Transactions on Networking"

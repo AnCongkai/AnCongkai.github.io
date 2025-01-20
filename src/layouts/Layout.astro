@@ -1,7 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import "../global.css";
-import { NAME } from "../lib/consts";
+import { NAME, BIO_TEXT } from "../lib/consts";
 ---
 
 <!doctype html>
@@ -9,6 +9,9 @@ import { NAME } from "../lib/consts";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="title" content={NAME} />
+    <meta name="description" content={BIO_TEXT[0]} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link
       href="https://cdn.jsdelivr.net/npm/katex@0.16.19/dist/katex.min.css"
