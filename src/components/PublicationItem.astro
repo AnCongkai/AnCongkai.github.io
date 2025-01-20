@@ -24,20 +24,16 @@ const images: Record<string, () => Promise<{ default: ImageMetadata }>> =
           </h3>
         </a>
         <HighlightAuthor name={NAME} authors={item.authors} />
-        {
-          item.paper_level && (
-            <span class="inline-block rounded-lg bg-zinc-200 p-1 font-mono mr-2 mb-2">
-              {item.paper_level}
-            </span>
-          )
-        }
-        {
-          item.paper_intro && (
-            <span class="inline-block p-1 font-mono mr-2 mb-2">
-              {item.paper_intro}
-            </span>
-          )
-        }
+        <p class="my-3">
+          {
+            item.paper_level && (
+              <span class="inline-block rounded-lg bg-zinc-200 px-1 py-0.5 text-center font-mono font-semibold">
+                {item.paper_level}
+              </span>
+            )
+          }
+          {item.paper_intro && item.paper_intro}
+        </p>
       </div>
     </div>
   </div>

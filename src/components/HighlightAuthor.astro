@@ -4,11 +4,11 @@ interface Props {
   authors: string;
 }
 
-const { name, authors } = Astro.props;
+const { authors } = Astro.props;
 const splitedAuthors = authors.split(", ");
 ---
 
-<p class="leading-5">
+<p class="leading-5 my-0">
   {
     splitedAuthors.map((item, index) => (
       <>
