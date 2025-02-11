@@ -1,14 +1,14 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://ancongkai.github.io",
-  integrations: [tailwind()],
+  integrations: [],
   markdown: {
     remarkPlugins: [remarkMath],
     rehypePlugins: [
@@ -19,5 +19,8 @@ export default defineConfig({
         },
       ],
     ],
+  },
+  vite: {
+    plugins: [tailwindcss()],
   },
 });
