@@ -1,7 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import "../global.css";
-import { NAME, BIO_TEXT } from "../lib/consts";
+import { NAME, SEARCH_NAME, SEARCH_SUB_TITLE } from "../lib/consts";
 ---
 
 <!doctype html>
@@ -10,8 +10,8 @@ import { NAME, BIO_TEXT } from "../lib/consts";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="title" content={NAME} />
-    <meta name="description" content={BIO_TEXT[0]} />
+    <meta name="title" content={SEARCH_NAME} />
+    <meta name="description" content={SEARCH_SUB_TITLE} />
     <meta
       name="google-site-verification"
       content="XUrFZKFUgB4Nb24wFTtNwQbEJcuEk0fB62FLdayUZf8"
@@ -25,7 +25,7 @@ import { NAME, BIO_TEXT } from "../lib/consts";
   </head>
   <body>
     <div
-      class="prose prose-blue mx-auto mt-5 max-w-5xl px-5 leading-4 prose-code:rounded-lg prose-code:bg-zinc-100 prose-code:p-1 prose-img:mx-auto prose-img:max-h-96 prose-img:w-auto"
+      class="prose prose-blue prose-code:rounded-lg prose-code:bg-zinc-100 prose-code:p-1 prose-img:mx-auto prose-img:max-h-96 prose-img:w-auto mx-auto mt-5 max-w-5xl px-5 leading-4"
     >
       <slot />
     </div>
